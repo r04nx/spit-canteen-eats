@@ -5,27 +5,27 @@ const CancelForm = () => {
   const [submitted, setSubmitted] = useState(false);
 
   return (
-    <section id="cancel" className="py-20 bg-muted/30">
-      <div className="container mx-auto px-4">
-        <div className="text-center mb-12 animate-slide-up">
+    <section id="cancel" className="min-h-screen bg-background flex flex-col">
+      <div className="w-full px-4 py-8">
+        <div className="text-center mb-6 animate-slide-up">
           <div className="inline-flex items-center justify-center w-16 h-16 rounded-full bg-gradient-to-br from-destructive to-destructive/70 mb-4">
             <XCircle className="w-8 h-8 text-destructive-foreground" />
           </div>
-          <h2 className="text-4xl md:text-5xl font-bold text-primary mb-4">
+          <h2 className="text-3xl md:text-4xl font-bold text-primary mb-2">
             Cancel Your Order
           </h2>
-          <p className="text-lg text-muted-foreground max-w-2xl mx-auto font-nunito">
+          <p className="text-base text-muted-foreground max-w-2xl mx-auto font-nunito">
             Need to cancel your order? Fill out the form below
           </p>
         </div>
 
-        <div className="max-w-4xl mx-auto bg-card rounded-2xl shadow-xl overflow-hidden">
+        <div className="w-full bg-card shadow-xl overflow-hidden flex-1">
           {!submitted ? (
             <div className="relative">
               <iframe
                 src="https://docs.google.com/forms/d/e/1FAIpQLScb0ngU-46uj8YM7TOw_c-Mhr7lxr20nti7ho0QcQ8YrMRkmg/viewform?embedded=true"
                 width="100%"
-                height="600"
+                height="1200"
                 frameBorder="0"
                 marginHeight={0}
                 marginWidth={0}

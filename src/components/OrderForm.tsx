@@ -5,27 +5,27 @@ const OrderForm = () => {
   const [submitted, setSubmitted] = useState(false);
 
   return (
-    <section id="order" className="py-20 bg-muted/30">
-      <div className="container mx-auto px-4">
-        <div className="text-center mb-12 animate-slide-up">
+    <section id="order" className="min-h-screen bg-muted/30 flex flex-col">
+      <div className="w-full px-4 py-8">
+        <div className="text-center mb-6 animate-slide-up">
           <div className="inline-flex items-center justify-center w-16 h-16 rounded-full bg-gradient-to-br from-primary to-accent mb-4">
             <ShoppingBag className="w-8 h-8 text-primary-foreground" />
           </div>
-          <h2 className="text-4xl md:text-5xl font-bold text-primary mb-4">
+          <h2 className="text-3xl md:text-4xl font-bold text-primary mb-2">
             Place Your Order
           </h2>
-          <p className="text-lg text-muted-foreground max-w-2xl mx-auto font-nunito">
+          <p className="text-base text-muted-foreground max-w-2xl mx-auto font-nunito">
             Fill out the form below to order your delicious meal
           </p>
         </div>
 
-        <div className="max-w-4xl mx-auto bg-card rounded-2xl shadow-xl overflow-hidden">
+        <div className="w-full bg-card shadow-xl overflow-hidden flex-1">
           {!submitted ? (
             <div className="relative">
               <iframe
                 src="https://docs.google.com/forms/d/e/1FAIpQLScEIh6SNkGuERGgVymrd_fmDVRMFrs_odRFE3vTNIze8pc77Q/viewform?embedded=true"
                 width="100%"
-                height="800"
+                height="2000"
                 frameBorder="0"
                 marginHeight={0}
                 marginWidth={0}

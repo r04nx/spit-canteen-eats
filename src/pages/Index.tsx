@@ -6,8 +6,8 @@ const Index = () => {
   return (
     <div className="min-h-screen">
       <Hero />
-      <div className="container mx-auto px-4 py-12 max-w-md">
-        <div className="space-y-6">
+      <div className="w-full">
+        <div className="space-y-0">
           <div id="order">
             <OrderForm />
           </div>
